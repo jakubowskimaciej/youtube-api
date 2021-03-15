@@ -1,3 +1,9 @@
+npm install --save-dev eslint-plugin-prettier
+npm install --save-dev --save-exact prettier
+npm install --save-dev eslint-config-prettier
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
