@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import youtube from './api/youtube';
 import SearchBar from './components/organisms/SearchBar/SearchBar';
-import VideoList from './components/organisms/VideoList/VideoList';
 import VideoDetail from './components/organisms/VideoDetail/VideoDetail';
+import VideoList from './components/organisms/VideoList/VideoList';
 import MainTemplate from './components/template/MainTemplate';
 
 const App = () => {
@@ -10,8 +10,8 @@ const App = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
 
   useEffect(() => {
-    onFormSubmit('miyagi');
-  });
+    onFormSubmit('start wars lofi hiphop');
+  }, []);
 
   const onFormSubmit = async (term) => {
     const res = await youtube.get('/search', {
@@ -19,14 +19,11 @@ const App = () => {
         q: term,
       },
     });
-
     setVideos(res.data.items);
     setSelectedVideo(res.data.items[0]);
   };
 
-  const handleVideoSelect = (video) => {
-    setSelectedVideo(video);
-  };
+  const handleVideoSelect = (video) => setSelectedVideo(video);
 
   return (
     <section>

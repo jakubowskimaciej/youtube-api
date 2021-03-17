@@ -3,19 +3,11 @@ import VideoItem from '../../molecules/VideoItem/VideoItem';
 import { ListWrapper } from './VideoList.styles';
 
 const VideoList = ({ videos, onVideoSelect }) => {
-  const renderedList = videos.map((video) => (
-    <VideoItem
-      key={video.id.videoId}
-      video={video}
-      onVideoSelect={onVideoSelect}
-    />
+  const videoList = videos.map((video) => (
+    <VideoItem key={video.etag} video={video} onVideoSelect={onVideoSelect} />
   ));
 
-  return (
-    <section>
-      <ListWrapper>{renderedList}</ListWrapper>
-    </section>
-  );
+  return <ListWrapper>{videoList}</ListWrapper>;
 };
 
 export default VideoList;

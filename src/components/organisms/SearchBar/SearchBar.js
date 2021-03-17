@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import {
   Wrapper,
   StyledForm,
@@ -16,6 +15,7 @@ const SearchBar = (props) => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    setInputValue('');
 
     props.submitFn(inputValue);
   };
@@ -23,7 +23,7 @@ const SearchBar = (props) => {
   return (
     <Wrapper>
       <StyledForm onSubmit={handleFormSubmit}>
-        <StyledLabel htmlFor="search-video">Search Video</StyledLabel>
+        <StyledLabel htmlFor="video-search">Video Search</StyledLabel>
         <StyledInput
           type="text"
           value={inputValue}

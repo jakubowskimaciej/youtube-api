@@ -9,7 +9,7 @@ export const StyledItem = styled.li`
 `;
 
 export const StyledImage = styled.img`
-  width: 14rem;
+  width: 13rem;
   margin-right: 1.6rem;
 `;
 
