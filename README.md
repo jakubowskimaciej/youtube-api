@@ -1,6 +1,8 @@
-npm install --save-dev eslint-plugin-prettier
-npm install --save-dev --save-exact prettier
-npm install --save-dev eslint-config-prettier
+this is a youtube search project from 'Modern React with Redux' course made by Stephen Grider. I used React Hooks and Styled Components instead of class based components and Semantic UI.\
+
+npm install --save-dev eslint-plugin-prettier.\
+npm install --save-dev --save-exact prettier.\
+npm install --save-dev eslint-config-prettier.\
 
 
 
@@ -75,3 +77,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # template
+# youtube-api

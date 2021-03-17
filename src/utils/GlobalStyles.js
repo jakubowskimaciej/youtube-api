@@ -38,7 +38,8 @@ export default createGlobalStyle`
       font-family: 'Montserrat', sans-serif;
       font-weight: 400;
       line-height: 1.6;
-      background-color: var(--color-lightGrey)
+      background-color: var(--color-lightGrey);
+      
     }
     form,
     input,
