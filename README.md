@@ -1,7 +1,7 @@
 this is a youtube search project from 'Modern React with Redux' course made by Stephen Grider. I used React Hooks and Styled Components instead of class based components and Semantic UI.
 
-npm install --save-dev eslint-plugin-prettier.
-npm install --save-dev --save-exact prettier.
+npm install --save-dev eslint-plugin-prettier.\
+npm install --save-dev --save-exact prettier.\
 npm install --save-dev eslint-config-prettier.
 
 
